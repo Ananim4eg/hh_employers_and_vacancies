@@ -1,0 +1,29 @@
+[project]
+name = "hh-employers-and-vacancies"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ananim4eg",email = "109145711+Ananim4eg@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.3.0"
+mypy = "^1.18.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+pytest-cov = "^7.0.0"
+
